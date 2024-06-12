@@ -49,7 +49,29 @@ tl.from(".page1",{
 tl.to(".loader",{
     dispaly:"none"
 })
+tl.from("#villan1 h1,#villan2 h1,#villan3 h2,#villan4 h1",{
+    y:120,
+    stagger:0.2,
+    opacity:0
+})
+}
+function cursoranimation(){
+    var crsr = document.querySelector(".cursor")
+
+    document.addEventListener("mousemove",function(dets){
+        gsap.to(crsr,{
+            x:dets.x,
+            y:dets.y
+        })
+    })
+
+    Shery.makeMagnet(".nav-part-2 h2",{});
 
 }
 
+
+
 loadinganimation();
+cursoranimation();
+
+

@@ -8,6 +8,16 @@ html, body{
     height: 100%;
     width: 100%;
 }
+.cursor{
+    height: 3vw;
+    width: 3vw;
+    border: 1px solid rgba(255, 255, 255, 0.756);
+    background-color: transparent;
+    border-radius: 50%;
+    z-index: 999;
+    position: absolute;
+    mix-blend-mode: difference;
+}
 .loader{
     height: 100%;
     width: 100%;
@@ -105,11 +115,80 @@ html, body{
     }
 }
 
+/* page 1 starting */
+
 .container{
     position: relative;
     background-color: #111;
 }
 .page1{
+    width: 100%;
+    height: 100vh;
+    background-color: #151515;
+}
+nav{
+    padding: 3.8vw 6.5vw;
+    display: flex;
+    justify-content: space-between;
+}
+nav .nav-part-1{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .nav-part-1 h2{
+    font-family:"Plain Light";
+    font-size: 1.1vw;
+    font-weight: 500;
+}
+
+nav .nav-part-2{
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+}
+.nav-part-2 h2{
+    font-family:"Plain Light";
+    font-size: 1.1vw;
+    font-weight: 500;
+}
+.page1-main{
+    width: 72%;
+    margin-left: 28%;
+    position: relative;
+    overflow: hidden;
+    z-index: 999;
+}
+.page1-main .hero h1{
+    font-size: 7.2vw;
+    font-weight: 600;
+    font-family: "Plain Light";
+    line-height: 7.2vw;
+}
+.page1-main #villan3{
+    display:flex;
+}
+.page1-main #villan3 h2{
+    font-size: 7.2vw;
+    font-weight: 600;
+    font-family: "Plain Light";
+    line-height: 7.5vw;
+    border-bottom: 0.8vw solid #fff;
+}
+
+.page1-main #villan3 h2:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+    font-weight: 400;
+    border: none;
+}
+.page1-main:nth-child(2){
+    margin-top: 3vh;
+}
+
+
+.page2{
     width: 100%;
     height: 100vh;
     background-color: #151515;
