@@ -14,8 +14,9 @@ html, body{
     border: 1px solid rgba(255, 255, 255, 0.756);
     background-color: transparent;
     border-radius: 50%;
-    z-index: 999;
+    z-index: 990;
     position: absolute;
+    top: 0;
     mix-blend-mode: difference;
 }
 .loader{
@@ -152,6 +153,7 @@ nav .nav-part-2{
     font-family:"Plain Light";
     font-size: 1.1vw;
     font-weight: 500;
+    cursor: pointer;
 }
 .page1-main{
     width: 72%;
@@ -161,28 +163,34 @@ nav .nav-part-2{
     z-index: 999;
 }
 .page1-main .hero h1{
-    font-size: 7.2vw;
+    font-size: 8vw;
     font-weight: 600;
     font-family: "Plain Light";
-    line-height: 7.2vw;
+    line-height: 7.3vw;
 }
-.page1-main #villan3{
-    display:flex;
+page1-main #villan3 .h1{
+    display: flex;
+    flex-direction: row;
 }
-.page1-main #villan3 h2{
-    font-size: 7.2vw;
+.page1-main #villan3 .h1 h3{
+    font-size: 8vw;
     font-weight: 600;
     font-family: "Plain Light";
-    line-height: 7.5vw;
+    line-height: 7.4vw;
     border-bottom: 0.8vw solid #fff;
+    transition: all ease 0.3s;
 }
 
-.page1-main #villan3 h2:hover{
+.page1-main #villan3 .h1 h3:hover{
     -webkit-text-stroke: 2px #fff;
     color: transparent;
     font-weight: 400;
     border: none;
 }
+#villan3{
+    height: 8vw;
+}
+
 .page1-main:nth-child(2){
     margin-top: 3vh;
 }
@@ -192,4 +200,40 @@ nav .nav-part-2{
     width: 100%;
     height: 100vh;
     background-color: #151515;
+}
+
+
+.page2 .video{
+    height: 85vh;
+    width: 71vw;
+    position: relative;
+    left: 28%;
+    top :10%;
+    background-image: url(Showreel-2022-preview-1.jpg);
+    z-index: 997;
+    transition: all ease 0.3s;
+    
+}
+.page2 .video .vedio-cursor{
+    height: 10vw;
+    width: 10vw;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #ffa62a;
+    top: -13%;
+    left: 75%;
+    z-index: 998;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page2 .video .vedio-cursor i{
+    font-size: 3vw;
+}
+
+.page2 .video video{
+height: 100%;
+width: 100%;
+object-fit: cover;
+
 }
