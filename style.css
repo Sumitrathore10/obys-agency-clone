@@ -8,9 +8,14 @@ html, body{
     height: 100%;
     width: 100%;
 }
+
+.container{
+    overflow: hidden;
+}
+
 .cursor{
-    height: 3vw;
-    width: 3vw;
+    height: 2.5vw;
+    width: 2.5vw;
     border: 1px solid rgba(255, 255, 255, 0.756);
     background-color: transparent;
     border-radius: 50%;
@@ -166,7 +171,7 @@ nav .nav-part-2{
     font-size: 8vw;
     font-weight: 600;
     font-family: "Plain Light";
-    line-height: 7.3vw;
+    line-height: 8vw;
 }
 page1-main #villan3 .h1{
     display: flex;
@@ -198,13 +203,14 @@ page1-main #villan3 .h1{
 
 .page2{
     width: 100%;
-    height: 100vh;
+    padding-top: 3vw;
+    min-height: 100vh;
     background-color: #151515;
 }
 
 
 .page2 .video{
-    height: 85vh;
+    height: 40vw;
     width: 71vw;
     position: relative;
     left: 28%;
@@ -236,4 +242,95 @@ height: 100%;
 width: 100%;
 object-fit: cover;
 
+}
+
+.page3{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #151515;
+    position: relative;
+
+}
+
+.page4{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #151515;
+    position: relative;
+    padding-top: 5vh;
+}
+
+.page4 .page4-main{
+    width: 65vw;
+    margin-left: 28%;
+    position: relative;
+}
+
+.page4 .page4-main h1{
+    font-family: "Plain Light";
+    font-size: 7vw;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.u-line{
+    height: 1px;
+    width: 65vw;
+    background-color: #fff;
+    margin: 2.5vw 0 4vw 0;
+}
+
+.page4 .page4-main > p{
+    font-family: "Plain Light";
+    font-size: 2.2vw;
+    font-weight: 400;
+    width: 55%;
+    margin-bottom :5vw; 
+}
+
+.page4 .page4-main .page4flex{
+    display: flex;  
+    justify-content: space-between;
+    align-items:flex-start; 
+}
+
+.page4 .page4-main .page4flex img{
+    width: 50%;
+}
+.page4 .page4-main .page4flex > p{
+    font-family: "Plain Light";
+    font-size: 1.1vw;
+    margin-right: 4vw;
+    font-weight: 400;
+    width: 40%;
+    
+}
+
+.page4 .page4-main .page4blu{
+    background-color:#3f7df4 ;
+    padding: 3vw;
+    width: 40vw;
+    position:relative;
+    margin-top: -10vw;
+    margin-left: 21vw;
+}
+
+.page4 .page4-main .page4blu .white-elem{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 3vw 0;
+    border-bottom: 1px solid white;
+}
+
+.page4 .page4-main .page4blu .white-elem >p{
+    width: 60% ;
+    font-family: "Plain Light";
+    font-size: 1.1vw;
+
+}
+.page4 .page4-main .page4blu .white-elem >h4{
+    width: 40% ;
+    font-family: "Plain Light";
+    font-size: 1.4vw;
+    font-weight :600;
 }

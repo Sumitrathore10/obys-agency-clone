@@ -50,6 +50,8 @@ tl.to(".loader",{
     dispaly:"none"
 })
 tl.from("nav",{
+    y:"-50",
+    stagger:0.2,
     opacity:0
 })
 tl.from("#villan1 h1,#villan2 h1,#villan3 .h1,#villan4 h1",{
@@ -61,6 +63,7 @@ tl.from("#villan1 h1,#villan2 h1,#villan3 .h1,#villan4 h1",{
 function cursoranimation(){
     var crsr = document.querySelector(".cursor")
     var cnt = document.querySelector(".container")
+    var p
 
     cnt.addEventListener("mousemove", function(event){
         var scrollX = window.scrollX;
@@ -73,20 +76,27 @@ function cursoranimation(){
     Shery.makeMagnet(".nav-part-2 h2",{});
 }
 
-function vediocursoraniamtion(){
-    var crsr = document.querySelector(".vedio-cursor")
-    var vedio = document.querySelector(".video")
-    var crsr2 = document.querySelector(".cursor")
+function vediocursoraniamtion() {
+    var crsr = document.querySelector(".vedio-cursor");
+    var vedio = document.querySelector(".video");
+    var crsr2 = document.querySelector(".cursor");
+    var thm = document.querySelector(".thm");
+    var vd = document.querySelector(".vd");
 
-    vedio.addEventListener("mouseover",function(){
+    vedio.addEventListener("mouseover", function() {
         crsr2.style.height = 0;
-        crsr2.style.width = 0; 
-    })
-    vedio.addEventListener("mouseleave",function(){
+        crsr2.style.width = 0;
+        crsr2.style.transition = "height 0.2s ease, width 0.2s ease";
+    });
+
+    vedio.addEventListener("mouseleave", function() {
         crsr2.style.height = "3vw";
-        crsr2.style.width = "3vw"; 
-    })
+        crsr2.style.width = "3vw";
+        crsr2.style.transition = "height 0.2s ease, width 0.2s ease";
+    });
+
 }
+
 
 
 loadinganimation();
